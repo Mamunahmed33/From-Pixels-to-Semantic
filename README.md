@@ -19,10 +19,6 @@ From Pixels to Semantics: A Multi-Stage AI Framework for Structural Damage Detec
 
 ---
 
-### References
-
-[1] Rahman et al., *VLCE*, 2025.
-
 
 ## Citation
 
