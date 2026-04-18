@@ -2,12 +2,11 @@
 From Pixels to Semantics: A Multi-Stage AI Framework for Structural Damage Detection in Satellite Imagery
 
 ## Multi-VLM Framework for Disaster Damage Assessment
+<p align="center">
+  <img src="img/VLM_analysis.png" alt="Multi-VLM Framework" width="600"/>
+</p>
 
-![Multi-VLM Framework](img/VLM_analysis.png)
-
-**Figure:** Overview of the Multi-VLM framework for disaster damage assessment.  
-The framework takes pre- and post-disaster images along with a structured prompt as input to multiple Vision-Language Models (VLMs), including **Gemma3** and **Qwen3**.  
-The generated responses are evaluated using **CLIPScore** and **VLM-as-a-Jury** metrics to assess reasoning quality.
+**Figure:** Overview of the Multi-VLM framework for disaster damage assessment. The framework takes pre- and post-disaster images along with a structured prompt as input to multiple Vision-Language Models (VLMs), including **Gemma3** and **Qwen3**. The generated responses are evaluated using **CLIPScore** and **VLM-as-a-Jury** metrics to assess reasoning quality.
 
 ### CLIPScore Comparison on xBD Disaster Subset (Full Images)
 
