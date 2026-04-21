@@ -21,7 +21,7 @@ from ultralytics import YOLO
 model = YOLO('yolov11{n/s/m/l/x}.pt')  # load a pretrained model
 
 #Train the model
-results = model.train(data='.\xView-buildings.yaml', epochs=50, imgsz=640, save=True)
+results = model.train(data='xView-buildings.yaml', epochs=50, imgsz=640, save=True)
 ```
 
 ### Prediction
@@ -29,7 +29,7 @@ results = model.train(data='.\xView-buildings.yaml', epochs=50, imgsz=640, save=
 from ultralytics import YOLO
 
 model = YOLO('yolov11{n/s/m/l/x}.pt')
-model.predict('image_path', imgz=640, save=True)
+model.predict('path/to/images', imgz=640, save=True)
 ```
 
 
