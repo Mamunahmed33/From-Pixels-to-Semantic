@@ -8,6 +8,32 @@ From Pixels to Semantics: A Multi-Stage AI Framework for Structural Damage Detec
 
 **Figure:** Overview of the Multi-VLM framework for disaster damage assessment. The framework takes pre- and post-disaster images along with a structured prompt as input to multiple Vision-Language Models (VLMs), including **Gemma3** and **Qwen3**. The generated responses are evaluated using **CLIPScore** and **VLM-as-a-Jury** metrics to assess reasoning quality.
 
+### YOLO Model Inference Pipeline
+
+### Install or upgrade the ultralytics package
+`pip install -U ultralytics`
+
+### Training
+```
+from ultralytics import YOLO
+
+#Load a model
+model = YOLO('yolov11{n/s/m/l/x}.pt')  # load a pretrained model
+
+#Train the model
+results = model.train(data='.\xView-buildings.yaml', epochs=50, imgsz=640, save=True)
+```
+
+### Prediction
+```
+from ultralytics import YOLO
+
+model = YOLO('yolov11{n/s/m/l/x}.pt')
+model.predict('image_path', imgz=640, save=True)
+```
+
+
+
 ### CLIPScore Comparison on xBD Disaster Subset (Full Images)
 
 | Disaster Type         | VLM Model                  | Avg. CLIPScore (%) | Max. CLIPScore | Min. CLIPScore |
